@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Data — raw data is personal, don't commit
+data/books/*/
+!data/book_catalog.json
+!data/books/.gitkeep
+
+# Output — final reports are committed
+!output/*.md
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp — pipeline intermediates, don't commit
+*.tmp
+*.swp
+*.swo
+data/books/*/scores_temp.json
+data/books/*/analysis_temp.json
+scripts/_fill_report.py
